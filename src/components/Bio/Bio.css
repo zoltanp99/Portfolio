@@ -1,0 +1,14 @@
+.bioWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageContainer {
+    background-color: red;
+}
+
+.bioTextContainer {
+    display: flex;
+    flex-direction: row;
+    
+}

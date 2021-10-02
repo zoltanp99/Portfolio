@@ -1,0 +1,10 @@
+.contentBlockWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: purple;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
