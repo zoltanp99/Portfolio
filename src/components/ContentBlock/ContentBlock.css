@@ -1,10 +1,55 @@
+@keyframes contentAppear {
+    from {
+        transform: scale(1, 0);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+
+  @keyframes contentDisappear {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1, 0);
+    }
+  }
+
 .contentBlockWrapper {
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    background-color: purple;
+    background-color: darkmagenta;
     border-radius: 5px;
     margin-bottom: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    color: white;
+}
+
+.header:hover {
+    background-color: darkviolet;
+}
+
+.header:active {
+    background-color: darkorchid;
+}
+
+.contentDisappear {
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    visibility: hidden;
+    animation-name: contentDisappear;
+    animation-duration: 1s;
+}
+
+.contentAppear {
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    animation-name: contentAppear;
+    animation-duration: 1s;
 }
