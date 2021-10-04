@@ -57,6 +57,7 @@
 .contentAppear {
     border: 3px solid lightgrey;
     border-radius: 5px;
+    background: white;
     /* animation-name: contentAppear;
     animation-duration: 0.75s;
     transform-origin: top; */
