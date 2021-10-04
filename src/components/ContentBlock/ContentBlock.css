@@ -1,22 +1,3 @@
-@keyframes contentAppear {
-    from {
-        transform: scale(1, 0);
-    }
-    to {
-      transform: scale(1, 1);
-    }
-  }
-
-  @keyframes contentDisappear {
-    from {
-        transform: scale(1, 1);
-    }
-    to {
-        transform: scale(1, 0);
-        display:none;
-    }
-  }
-
 .contentBlockWrapper {
     display: flex;
     flex-direction: column;
@@ -44,22 +25,9 @@
     background-color: darkorchid;
 }
 
-.contentDisappear {
-    border: 3px solid lightgrey;
-    border-radius: 5px;
-    animation-name: contentDisappear;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    transform-origin: top;
-    max-height: auto;
-}
-
-.contentAppear {
+.content {
     border: 3px solid lightgrey;
     border-radius: 5px;
     background: white;
-    /* animation-name: contentAppear;
-    animation-duration: 0.75s;
-    transform-origin: top; */
     max-height: auto;
 }

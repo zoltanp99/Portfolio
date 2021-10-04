@@ -1,12 +1,7 @@
 .bioWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-bottom: 20px;
-}
-
-.imageContainer {
-    background-color: red;
 }
 
 .bioTextContainer {

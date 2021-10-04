@@ -17,8 +17,8 @@ const ContentBlock = (props) => {
             <div className='header' onClick = {() => handleClick()}>
                 {props.headerTitle}
             </div>
-            <AnimateHeight className='contentAppear' id='contentBlock' height={contentHeight}>
-                <div>
+            <AnimateHeight className='content' id='contentBlock' height={contentHeight}>
+                <div style={{padding: '5px'}}>
                     {props.content}
                 </div>  
             </AnimateHeight>
