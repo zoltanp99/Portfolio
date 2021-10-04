@@ -13,20 +13,25 @@
     }
     to {
         transform: scale(1, 0);
+        display:none;
     }
   }
 
 .contentBlockWrapper {
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .header {
+    display: flex;
     background-color: darkmagenta;
     border-radius: 5px;
-    margin-bottom: 5px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding:5px;
+    margin: 5px 0 5px 0;
+    min-height: 50px;
+    justify-content: left;
+    align-items: center;
     cursor: pointer;
     color: white;
 }
@@ -42,14 +47,18 @@
 .contentDisappear {
     border: 3px solid lightgrey;
     border-radius: 5px;
-    visibility: hidden;
     animation-name: contentDisappear;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    max-height: auto;
 }
 
 .contentAppear {
     border: 3px solid lightgrey;
     border-radius: 5px;
-    animation-name: contentAppear;
-    animation-duration: 1s;
+    /* animation-name: contentAppear;
+    animation-duration: 0.75s;
+    transform-origin: top; */
+    max-height: auto;
 }

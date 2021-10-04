@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
         <Bio />
+        <ContentBlock headerTitle = 'Skillset' content = {constants.loremIpsum} />
         <ContentBlock headerTitle = 'Education' content = {constants.loremIpsum} />
+        <ContentBlock headerTitle = 'Work History' content = {constants.loremIpsum} />
     </div>
     );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
-import  './ContentBlock.css';
+import './ContentBlock.css';
+import AnimateHeight from 'react-animate-height';
 
 const ContentBlock = (props) => {
 
-    const [contentEnabled, setContentEnabled] = React.useState(false);
-    
+    const [contentHeight, setContentHeight] = React.useState(0);
+
     const handleClick = () => {
-        setContentEnabled(!contentEnabled);
-        console.log('it happened');
-        console.log(contentEnabled);
+        const height = contentHeight;
+        setContentHeight(height === 0 ? 'auto' : 0);
     }
 
 
@@ -17,9 +17,11 @@ const ContentBlock = (props) => {
             <div className='header' onClick = {() => handleClick()}>
                 {props.headerTitle}
             </div>
-            <div className={contentEnabled ? 'contentAppear' : 'contentDisappear'}>
-                {props.content}
-            </div>  
+            <AnimateHeight className='contentAppear' id='contentBlock' height={contentHeight}>
+                <div>
+                    {props.content}
+                </div>  
+            </AnimateHeight>
         </div>
     )
 }
