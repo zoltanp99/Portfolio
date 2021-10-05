@@ -1,14 +1,21 @@
 import React from 'react'
 import './Bio.css'
 import ImageContainer from '../ImageContainer/ImageContainer'
+import ParagraphContainer from '../ParagraphContainer/ParagraphContainer'
 import headshot from '../../Images/black-lotus.png'
 
-const Bio = () => {
+const Bio = (props) => {
+
+    const paragraphs = props.paragraphs.map(element => {
+        return <ParagraphContainer paragraphTitle={element.title} paragraphContent={element.content}/>
+        });
+
+
     return (
         <div className="bioWrapper">
             <ImageContainer imageSource={headshot} alt='headshot'/>
             <div className="bioTextContainer">
-                this is where the bio text will stay
+                {paragraphs}
             </div>
         </div>
     )

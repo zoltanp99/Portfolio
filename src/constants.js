@@ -7,3 +7,22 @@ export const loremIpsum = `Lorem Ipsum is simply dummy text of the printing and 
                     making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
                     and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
                     accident, sometimes on purpose (injected humour and the like)`;
+
+export const bioArray = [
+    {
+      title: 'About Me',
+      content: 'Hi! My name is Zoltan Pastor, I am a Computer Sciences student, and aspiring web developer. I was born and am currently based in Novi Sad, Serbia.'
+    },
+    
+    {
+      title: 'Career Goals',
+      content: `My career goals are, first and foremost to better myself and improve my skills in the coding world.
+                I also aim to put myself out there, and help the web become a better place with my work in it.`
+    },
+    
+    {
+      title: 'pesak',
+      content: 'adadadadadadadadadadadadadadadadadadad'
+    }
+
+]

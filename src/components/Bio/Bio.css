@@ -6,6 +6,11 @@
 
 .bioTextContainer {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    width: 100%;
 }

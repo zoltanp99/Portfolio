@@ -1,0 +1,9 @@
+.paragraphWrapper {
+    display: flex;
+    margin: 10px;
+    text-align: left;
+}
+
+.boldText{
+    min-width: fit-content;
+}
