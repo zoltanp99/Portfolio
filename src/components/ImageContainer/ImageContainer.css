@@ -1,7 +1,11 @@
+
+/*Th*/
 .imageWrapper {
     display: flex;
     max-height: 600px;
-    max-width: 500px;
+    max-width: 430.77px;
+    min-width: 215px;
+    min-height: 300px;
 }
 
 .image {
